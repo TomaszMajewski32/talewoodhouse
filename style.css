@@ -1,0 +1,354 @@
+/* Talewood House — wizytówka. Kolory i krój jak w materiale marki. */
+@font-face {
+  font-family: "Cormorant TH";
+  src: url("fonts/cormorant-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant TH";
+  src: url("fonts/cormorant-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant TH";
+  src: url("fonts/cormorant-500-italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant SC TH";
+  src: url("fonts/cormorant-sc-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --green: #16332B;
+  --green-deep: #0E241E;
+  --cream: #F3EBDA;
+  --cream-soft: #F8F3E8;
+  --gold: #C6A15B;
+  --gold-soft: #E8D5A3;
+  --ink: #13261F;
+  --rule: rgba(198, 161, 91, 0.45);
+  --max: 42rem;
+  --wide: 52rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 112.5%; /* 18px */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Cormorant TH", "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  min-height: 100vh;
+}
+
+[hidden] { display: none !important; }
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -10rem;
+  background: var(--green);
+  color: var(--cream);
+  padding: 0.5rem 0.8rem;
+  z-index: 20;
+}
+.skip:focus { top: 0.5rem; }
+
+.wrap {
+  width: min(var(--wide), calc(100% - 2.4rem));
+  margin-inline: auto;
+}
+
+/* Language visibility */
+body[data-lang="pl"] .t-en { display: none; }
+body[data-lang="en"] .t-pl { display: none; }
+body:not([data-lang]) .t-en { display: none; }
+
+.top {
+  padding: 1.6rem 0 0.4rem;
+}
+
+.top__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: block;
+  max-width: 22rem;
+  flex: 1 1 auto;
+}
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding-top: 0.35rem;
+  flex: 0 0 auto;
+}
+
+.lang__btn {
+  appearance: none;
+  border: 0;
+  background: none;
+  color: var(--green);
+  font-family: "Cormorant SC TH", "Cormorant TH", serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.4rem;
+  cursor: pointer;
+  opacity: 0.45;
+}
+.lang__btn.is-active {
+  opacity: 1;
+}
+.lang__btn:hover,
+.lang__btn:focus-visible {
+  opacity: 1;
+}
+.lang__btn:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 2px;
+}
+.lang__sep {
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+.eyebrow,
+.work__kind,
+.work__soon,
+h2 {
+  font-family: "Cormorant SC TH", "Cormorant TH", serif;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+}
+
+.eyebrow {
+  margin: 2.4rem 0 1.1rem;
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.intro__text {
+  max-width: var(--max);
+}
+.intro__text p {
+  margin: 0 0 0.85rem;
+}
+.intro__text p:last-child {
+  margin-bottom: 0;
+}
+
+.works,
+.contact {
+  margin-top: 3.2rem;
+}
+
+h2 {
+  margin: 0 0 0.7rem;
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.works__lead {
+  margin: 0 0 1.8rem;
+  max-width: var(--max);
+  color: var(--green);
+}
+
+.work {
+  border-top: 1px solid var(--rule);
+  padding: 1.25rem 0 1.35rem;
+}
+
+.work h3 {
+  margin: 0.15rem 0 0.45rem;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--green-deep);
+}
+
+.work p {
+  margin: 0 0 0.45rem;
+  max-width: 38rem;
+}
+.work p:last-child { margin-bottom: 0; }
+
+.work__kind {
+  margin: 0 0 0.2rem;
+  color: var(--gold);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.work__soon {
+  margin-top: 0.7rem;
+  color: var(--gold);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.work--feature {
+  display: grid;
+  grid-template-columns: 10.5rem 1fr;
+  gap: 1.4rem 1.6rem;
+  align-items: start;
+  padding-top: 1.5rem;
+}
+
+.work__cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0 8px 28px rgba(14, 36, 30, 0.12);
+}
+
+.work em { font-style: italic; }
+
+.mails {
+  list-style: none;
+  margin: 0 0 1.6rem;
+  padding: 0;
+}
+.mails li {
+  margin: 0 0 0.85rem;
+}
+.mails a {
+  color: var(--green-deep);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.2rem;
+}
+.mails a:hover,
+.mails a:focus-visible {
+  border-bottom-color: var(--gold);
+  color: var(--green);
+}
+.mails a:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 3px;
+}
+.mails__hint {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--green);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  font-family: "Cormorant TH", serif;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--green);
+  text-decoration: none;
+  padding: 0.2rem 0;
+}
+.social__link:hover,
+.social__link:focus-visible {
+  color: var(--green-deep);
+}
+.social__link:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 3px;
+}
+.social__link[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: default;
+}
+.social__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: 0 0 auto;
+}
+.social__label {
+  font-size: 1.05rem;
+}
+.social__soon {
+  font-family: "Cormorant TH", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--gold);
+}
+
+.foot {
+  margin-top: 3.4rem;
+  padding: 1.6rem 0 2.4rem;
+  border-top: 1px solid var(--rule);
+  color: var(--green);
+  font-size: 0.95rem;
+}
+.foot__copy {
+  margin: 0 0 0.25rem;
+}
+.foot__imprint {
+  margin: 0;
+  opacity: 0.85;
+}
+
+a { color: var(--green); }
+
+@media (max-width: 36rem) {
+  html { font-size: 106%; }
+  .logo { max-width: 16.5rem; }
+  .work--feature {
+    grid-template-columns: 1fr;
+  }
+  .work__cover {
+    width: 8.2rem;
+  }
+  .work h3 { font-size: 1.4rem; }
+  .top { padding-top: 1.1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

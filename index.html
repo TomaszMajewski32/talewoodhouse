@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talewood House</title>
+  <meta name="description" content="Talewood House — małe, niezależne wydawnictwo. Przygotowujemy książki i albumy, które zostają z Czytelnikiem na dłużej.">
+  <meta name="theme-color" content="#F3EBDA">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-lang="pl">
+  <!--
+    ============================================================
+    KONFIGURACJA LINKSÓW
+    Instagram i Facebook są już wpisane.
+    Żeby zmienić adres, popraw pole poniżej (pełny https://...).
+    Puste pole = przycisk widoczny, ale oznaczony „wkrótce” i bez działania.
+    ============================================================
+  -->
+  <script>
+    window.TALEWOOD = {
+      facebook: "https://www.facebook.com/share/1FjmEsEHjP/",
+      instagram: "https://www.instagram.com/talewoodhouse/"
+    };
+  </script>
+
+  <a class="skip" href="#tresc">Przejdź do treści</a>
+
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="logo" href="/" aria-current="page">
+        <img src="images/logo.png" width="1000" height="300" alt="Talewood House — książki i albumy">
+      </a>
+      <div class="lang" role="group" aria-label="Language / Język">
+        <button type="button" class="lang__btn is-active" data-set-lang="pl" aria-pressed="true">PL</button>
+        <span class="lang__sep" aria-hidden="true">·</span>
+        <button type="button" class="lang__btn" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="tresc">
+    <section class="intro wrap" aria-labelledby="o-nas">
+      <p class="eyebrow" id="o-nas">
+        <span lang="pl" class="t-pl">Wydawnictwo</span>
+        <span lang="en" class="t-en">Publisher</span>
+      </p>
+      <div class="intro__text t-pl" lang="pl">
+        <p>Cześć, tu Talewood House.</p>
+        <p>Jesteśmy małym, niezależnym wydawnictwem. Przygotowujemy książki i albumy, które zostają z Czytelnikiem na dłużej.</p>
+        <p>Na początek kilka ścieżek: poradnik „Odnalazłam siebie” autorki Emi Wood; powieści obyczajowo-romantyczne z pazurem, dla dorosłych czytelniczek; a osobno nowe przekłady klasyki z domeny publicznej.</p>
+        <p>Sprzedaż planujemy online, w Europie. Pierwsze tytuły pojawią się, gdy będą gotowe. Do tego czasu opowiadamy tu, nad czym pracujemy.</p>
+        <p>Jeśli lubicie książki, które zostają w domu — miło będzie iść dalej razem.</p>
+      </div>
+      <div class="intro__text t-en" lang="en">
+        <p>Hello, this is Talewood House.</p>
+        <p>We are a small independent publisher. We prepare books and albums meant to stay with the reader.</p>
+        <p>To begin with, a few paths: the guide “I Found Myself” by Emi Wood; contemporary romantic novels with an edge, for adult women readers; and, separately, new translations of public-domain classics.</p>
+        <p>We plan to sell our books online, in Europe. The first titles will appear when they are ready. Until then, this is where we share what we are working on.</p>
+        <p>If you like books that stay in the home — we would be glad to go on together.</p>
+      </div>
+    </section>
+
+    <section class="works wrap" aria-labelledby="w-przygotowaniu">
+      <h2 id="w-przygotowaniu">
+        <span class="t-pl" lang="pl">W przygotowaniu</span>
+        <span class="t-en" lang="en">In preparation</span>
+      </h2>
+      <p class="works__lead t-pl" lang="pl">Tytuły podamy, gdy będą ustalone. Na razie mówimy: wkrótce.</p>
+      <p class="works__lead t-en" lang="en">We will share titles once they are decided. For now, we simply say: coming soon.</p>
+
+      <!--
+        LISTA „W PRZYGOTOWANIU”
+        Żeby dodać kolejną pozycję: skopiuj cały blok <article class="work">…</article>
+        (ostatni widoczny, albo szablon na samym dole tej sekcji) i wklej go
+        pod poprzednią pozycją. Uzupełnij tytuł i krótki opis po polsku (t-pl)
+        oraz po angielsku (t-en). Nie wpisuj dat premiery ani cen,
+        dopóki nie są ustalone. Okładkę dodajesz opcjonalnie: <img> w .work__cover.
+      -->
+
+      <article class="work work--feature">
+        <div class="work__cover">
+          <img src="images/odnalazlam-siebie.jpg" width="720" height="900" alt="Okładka poradnika „Odnalazłam siebie” — Emi Wood, Talewood House">
+        </div>
+        <div class="work__body">
+          <p class="work__kind t-pl" lang="pl">Poradnik</p>
+          <p class="work__kind t-en" lang="en">A guide</p>
+          <h3>
+            <span class="t-pl" lang="pl">Odnalazłam siebie</span>
+            <span class="t-en" lang="en">I Found Myself</span>
+          </h3>
+          <p class="t-pl" lang="pl">Poradnik po rozstaniu, autorka Emi Wood. Powstaje też po angielsku <em>I Found Myself</em> i po hiszpańsku <em>Me reencontré</em>.</p>
+          <p class="t-en" lang="en">A guide for the time after a relationship ends, by Emi Wood. Editions in Polish (<em>Odnalazłam siebie</em>), English and Spanish (<em>Me reencontré</em>).</p>
+          <p class="work__soon t-pl" lang="pl">Wkrótce</p>
+          <p class="work__soon t-en" lang="en">Coming soon</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work__body">
+          <p class="work__kind t-pl" lang="pl">Powieść</p>
+          <p class="work__kind t-en" lang="en">A novel</p>
+          <h3>
+            <span class="t-pl" lang="pl">Powieść — tytuł wkrótce</span>
+            <span class="t-en" lang="en">A novel — title coming soon</span>
+          </h3>
+          <p class="t-pl" lang="pl">Historia, nad którą właśnie pracujemy. Tytuł podamy, gdy będzie ustalony.</p>
+          <p class="t-en" lang="en">A story we are working on now. We will share the title once it is decided.</p>
+        </div>
+      </article>
+
+
+      <article class="work">
+        <div class="work__body">
+          <p class="work__kind t-pl" lang="pl">Powieści</p>
+          <p class="work__kind t-en" lang="en">Novels</p>
+          <h3>
+            <span class="t-pl" lang="pl">Powieści obyczajowo-romantyczne z pazurem</span>
+            <span class="t-en" lang="en">Contemporary romantic novels with an edge</span>
+          </h3>
+          <p class="t-pl" lang="pl">Pisane dla dorosłych czytelniczek. Tytuły podamy, gdy będą ustalone.</p>
+          <p class="t-en" lang="en">Written for adult women readers. Titles will follow once they are decided.</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work__body">
+          <p class="work__kind t-pl" lang="pl">Przekłady</p>
+          <p class="work__kind t-en" lang="en">Translations</p>
+          <h3>
+            <span class="t-pl" lang="pl">Nowe przekłady klasyki</span>
+            <span class="t-en" lang="en">New translations of the classics</span>
+          </h3>
+          <p class="t-pl" lang="pl">Osobno pracujemy nad nowymi przekładami dzieł z domeny publicznej.</p>
+          <p class="t-en" lang="en">Separately, we are also working on new translations of public-domain classics.</p>
+        </div>
+      </article>
+
+      <!--
+        SZABLON KOLEJNEJ POZYCJI (skopiuj, odkomentuj i uzupełnij):
+
+        <article class="work">
+          <div class="work__body">
+            <p class="work__kind t-pl" lang="pl">Poradnik / Powieść / Seria</p>
+            <p class="work__kind t-en" lang="en">A guide / A novel / A series</p>
+            <h3>
+              <span class="t-pl" lang="pl">Tytuł po polsku</span>
+              <span class="t-en" lang="en">Title in English</span>
+            </h3>
+            <p class="t-pl" lang="pl">Krótki opis. Bez daty premiery i bez ceny, dopóki nie są ustalone.</p>
+            <p class="t-en" lang="en">A short description. No publication date or price until they are set.</p>
+          </div>
+        </article>
+      -->
+    </section>
+
+    <section class="contact wrap" aria-labelledby="kontakt">
+      <h2 id="kontakt">
+        <span class="t-pl" lang="pl">Kontakt</span>
+        <span class="t-en" lang="en">Contact</span>
+      </h2>
+      <ul class="mails">
+        <li>
+          <a href="mailto:kontakt@talewoodhouse.com">kontakt@talewoodhouse.com</a>
+          <span class="mails__hint t-pl" lang="pl">sprawy wydawnictwa</span>
+          <span class="mails__hint t-en" lang="en">the publisher</span>
+        </li>
+        <li>
+          <a href="mailto:listy@talewoodhouse.com">listy@talewoodhouse.com</a>
+          <span class="mails__hint t-pl" lang="pl">listy od czytelniczek i czytelników o ich historiach</span>
+          <span class="mails__hint t-en" lang="en">letters from readers about their stories</span>
+        </li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a class="social__link" data-social="facebook" href="https://www.facebook.com/share/1FjmEsEHjP/" rel="noopener noreferrer" target="_blank">
+            <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v7h4v-7h3.2l.8-4H13V9c0-.6.4-1 1-1z"/>
+            </svg>
+            <span class="social__label">Facebook</span>
+            <span class="social__soon t-pl" lang="pl">wkrótce</span>
+            <span class="social__soon t-en" lang="en">coming soon</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" data-social="instagram" href="https://www.instagram.com/talewoodhouse/" rel="noopener noreferrer" target="_blank">
+            <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm9.2 1.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 2a1.8 1.8 0 1 0 1.8 1.8A1.8 1.8 0 0 0 12 10.2z"/>
+            </svg>
+            <span class="social__label">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p class="foot__copy">© 2026 Talewood House</p>
+      <p class="foot__imprint t-pl" lang="pl">Wydawca: Talewood House. Sprzedawca: EMI Emilia Podgórska.</p>
+      <p class="foot__imprint t-en" lang="en">Publisher: Talewood House. Seller: EMI Emilia Podgórska.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var cfg = window.TALEWOOD || {};
+      var links = document.querySelectorAll("[data-social]");
+      for (var i = 0; i < links.length; i++) {
+        var a = links[i];
+        var key = a.getAttribute("data-social");
+        var url = (cfg[key] || "").trim();
+        var soon = a.querySelectorAll(".social__soon");
+        if (url) {
+          a.setAttribute("href", url);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+          a.removeAttribute("aria-disabled");
+          for (var s = 0; s < soon.length; s++) soon[s].hidden = true;
+        } else {
+          a.setAttribute("href", "#");
+          a.setAttribute("aria-disabled", "true");
+          a.removeAttribute("target");
+          a.removeAttribute("rel");
+          a.addEventListener("click", function (e) { e.preventDefault(); });
+        }
+      }
+
+      var buttons = document.querySelectorAll("[data-set-lang]");
+      function setLang(lang) {
+        if (lang !== "en" && lang !== "pl") lang = "pl";
+        document.documentElement.lang = lang;
+        document.body.setAttribute("data-lang", lang);
+        for (var b = 0; b < buttons.length; b++) {
+          var on = buttons[b].getAttribute("data-set-lang") === lang;
+          buttons[b].classList.toggle("is-active", on);
+          buttons[b].setAttribute("aria-pressed", on ? "true" : "false");
+        }
+        try { localStorage.setItem("talewood-lang", lang); } catch (e) {}
+      }
+      for (var b = 0; b < buttons.length; b++) {
+        buttons[b].addEventListener("click", function () {
+          setLang(this.getAttribute("data-set-lang"));
+        });
+      }
+      var saved = null;
+      try { saved = localStorage.getItem("talewood-lang"); } catch (e) {}
+      setLang(saved || "pl");
+    })();
+  </script>
+</body>
+</html>
